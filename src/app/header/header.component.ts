@@ -7,7 +7,7 @@ import { GlobalService } from '../shared/services/global.service';
   styleUrls: ['./header.component.sass']
 })
 export class HeaderComponent implements OnInit {
-  
+
   width: number;
   height: number;
 
