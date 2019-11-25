@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { GlobalService } from '../../shared/services/global.service';
 
 import htmltoimage from 'html-to-image';
-import { saveAs } from 'file-loader';
+import { saveAs } from 'file-saver';
 
 @Component({
   selector: 'app-workspace',
