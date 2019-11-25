@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { GlobalService } from '../../shared/services/global.service';
 
 import htmltoimage from 'html-to-image';
-import { saveAs } from 'file-saver';
+import { saveAs } from 'file-loader';
 
 @Component({
   selector: 'app-workspace',
   templateUrl: './workspace.component.html',
-  styleUrls: ['./workspace.component.css']
+  styleUrls: ['./workspace.component.sass']
 })
 export class WorkspaceComponent implements OnInit {
 
