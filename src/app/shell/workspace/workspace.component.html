@@ -1,0 +1,14 @@
+<div class="container mx-auto my-auto"
+    [ngStyle]="{'width.px': globalService.getExportWidth(), 'height.px' : globalService.getExportHeight()}">
+    <div id="to-png" class="chosen-template h-100 w-100">
+        <div class="row h-100">
+            <div class="col-md-6 workspace">
+                <img src="{{ image }}" alt="">
+            </div>
+            <div class="col-md-6 workspace">
+                <img src="{{ image }}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<a (click)="exportImage()" class="btn btn-primary">Export</a>
