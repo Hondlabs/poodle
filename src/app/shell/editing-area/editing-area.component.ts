@@ -8,8 +8,7 @@ import { GlobalService } from 'src/app/shared/services/global.service';
 })
 export class EditingAreaComponent implements OnInit {
 
-  color = this.globalService.getStyle().color;
-  solid = this.globalService.getStyle().solid;
+  solid: boolean;
 
   constructor(public globalService: GlobalService) { }
 
@@ -17,7 +16,7 @@ export class EditingAreaComponent implements OnInit {
 
   setStyle() {
 
-    this.globalService.setStyle(this.color, this.solid);
+    this.globalService.setStyle(this.solid);
   }
 
 }
