@@ -4,7 +4,7 @@
         <div class="row h-100" *ngIf="globalService.getTemplateNumber() == 1">
             <div class="col-md-12 workspace"
                 [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
-                <img src="#" alt="">
+                <img [src]="globalService.getSelectedImage()" alt="">
             </div>
         </div>
         <div class="row h-100" *ngIf="globalService.getTemplateNumber() == 2">
