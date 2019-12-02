@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalService } from 'src/app/shared/services/global.service';
 
 @Component({
   selector: 'app-editing-area',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditingAreaComponent implements OnInit {
 
-  constructor() { }
+  solid: boolean;
 
-  ngOnInit() {
+  constructor(public globalService: GlobalService) { }
+
+  ngOnInit() { }
+
+  setStyle() {
+
+    this.globalService.setStyle(this.solid);
   }
 
 }

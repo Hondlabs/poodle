@@ -11,12 +11,13 @@ import { saveAs } from 'file-saver';
 })
 export class WorkspaceComponent implements OnInit {
 
-  image = localStorage.getItem(0 + "");
+  constructor(public globalService: GlobalService) { }
 
-  constructor(public globalService: GlobalService) {
-  }
+  ngOnInit() { }
 
-  ngOnInit() {
+  setImage(event: any) {
+
+    (event.target as HTMLElement).innerHTML = '<img style="width:100%" src="' + this.globalService.getSelectedImage() + '">'
   }
 
   exportImage() {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalService } from 'src/app/shared/services/global.service';
 
 @Component({
   selector: 'app-template-selection-area',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateSelectionAreaComponent implements OnInit {
 
-  constructor() { }
+  constructor(public globalService: GlobalService, ) { }
 
   ngOnInit() {
+  }
+
+  setTemplateNumber(number: string) {
+
+    this.globalService.setTemplateNumber(parseInt(number));
   }
 
 }
