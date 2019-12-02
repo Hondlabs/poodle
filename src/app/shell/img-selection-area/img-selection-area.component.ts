@@ -21,4 +21,15 @@ export class ImgSelectionAreaComponent implements OnInit {
   ngOnInit() {
   }
 
+  setSelected(event: any) {
+
+    var imageElements = document.querySelectorAll('img');
+    for (let i = 0; i < imageElements.length; i++) {
+
+      imageElements[i].style.border = 'none';
+    }
+
+    event.target.style = "border: solid 2px blue; width:100%;"
+  }
+
 }
