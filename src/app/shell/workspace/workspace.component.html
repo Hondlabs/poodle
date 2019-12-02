@@ -2,7 +2,7 @@
     [ngStyle]="{'width.px': globalService.getExportWidth(), 'height.px' : globalService.getExportHeight()}">
     <div id="to-png" class="chosen-template h-100 w-100">
         <div class="row h-100" *ngIf="globalService.getTemplateNumber() == 1">
-            <div class="col-md-6 workspace"
+            <div class="col-md-12 workspace"
                 [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
                 <img src="#" alt="">
             </div>
