@@ -17,7 +17,6 @@ export class EditingAreaComponent implements OnInit {
 
   setStyle() {
 
-    console.log(this.solid);
     this.globalService.setStyle(this.color, this.solid);
   }
 
