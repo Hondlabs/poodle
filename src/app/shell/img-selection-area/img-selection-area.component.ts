@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalService } from 'src/app/shared/services/global.service';
 
 @Component({
   selector: 'app-img-selection-area',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImgSelectionAreaComponent implements OnInit {
 
-  constructor() { }
+  imageURLs = [];
+
+  constructor(public globalService: GlobalService) {
+
+    for (let i = 0; i < 77; i++) {
+
+      this.imageURLs.push('./../../../assets/images/content-images/' + i + ".png");
+    }
+  }
 
   ngOnInit() {
   }

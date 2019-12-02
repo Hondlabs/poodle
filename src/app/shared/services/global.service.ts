@@ -7,6 +7,8 @@ export class GlobalService {
 
     templateNumber = 2;
 
+    selectedImage: string;
+
     getExportWidth() {
 
         return <number>this.widthInput * 37.79527559055118;
@@ -46,5 +48,15 @@ export class GlobalService {
     getStyle() {
 
         return this.solid;
+    }
+
+    setSelectedImage(image: string) {
+
+        this.selectedImage = image;
+    }
+
+    getSelectedImage() {
+
+        return this.selectedImage;
     }
 }

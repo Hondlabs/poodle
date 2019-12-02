@@ -1,1 +1,8 @@
-<p>img-selection-area works!</p>
+<div class="row">
+    <div class="col-md-1" style="margin-bottom: 5px;" *ngFor="let image of imageURLs">
+        <a style="cursor:pointer;" (click)="globalService.setSelectedImage($event.target)">
+            <img style="width: 100%;" [src]="image" alt=" Poodle Content Image">
+        </a>
+    </div>
+
+</div>
