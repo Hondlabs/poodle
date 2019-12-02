@@ -3,7 +3,7 @@ export class GlobalService {
     widthInput = 10;
     heightInput = 10;
 
-    styling = { color: "#000000", solid: false };
+    solid = false;
 
     templateNumber = 2;
 
@@ -38,14 +38,13 @@ export class GlobalService {
         return this.templateNumber;
     }
 
-    setStyle(color: string, solid: boolean) {
+    setStyle(solid: boolean) {
 
-        this.styling.color = color;
-        this.styling.solid = solid;
+        this.solid = solid;
     }
 
     getStyle() {
 
-        return this.styling;
+        return this.solid;
     }
 }
