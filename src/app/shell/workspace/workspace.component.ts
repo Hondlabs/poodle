@@ -15,6 +15,11 @@ export class WorkspaceComponent implements OnInit {
 
   ngOnInit() { }
 
+  setImage(event: any) {
+
+    (event.target as HTMLElement).innerHTML = '<img style="width:100%" src="' + this.globalService.getSelectedImage() + '">'
+  }
+
   exportImage() {
 
     var element = document.getElementById('to-png');
