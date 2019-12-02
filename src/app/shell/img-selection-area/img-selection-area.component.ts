@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImgSelectionAreaComponent implements OnInit {
 
-  constructor() { }
+  imageURLs = [];
+
+  constructor() {
+
+    for (let i = 0; i < 77; i++) {
+
+      this.imageURLs.push('./../../../assets/images/content-images/' + i + ".png");
+    }
+  }
 
   ngOnInit() {
   }
