@@ -7,7 +7,7 @@ export class GlobalService {
 
     templateNumber = 2;
 
-    selectedImage: File;
+    selectedImage: string;
 
     getExportWidth() {
 
@@ -50,7 +50,7 @@ export class GlobalService {
         return this.solid;
     }
 
-    setSelectedImage(image: File) {
+    setSelectedImage(image: string) {
 
         this.selectedImage = image;
     }
