@@ -3,6 +3,8 @@ export class GlobalService {
     widthInput = 10;
     heightInput = 10;
 
+    styling = { color: "#000000", solid: false };
+
     templateNumber = 2;
 
     getExportWidth() {
@@ -34,5 +36,16 @@ export class GlobalService {
     getTemplateNumber() {
 
         return this.templateNumber;
+    }
+
+    setStyle(color: string, solid: boolean) {
+
+        this.styling.color = color;
+        this.styling.solid = solid;
+    }
+
+    getStyle() {
+
+        return this.styling;
     }
 }
