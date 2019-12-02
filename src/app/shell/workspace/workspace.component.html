@@ -2,95 +2,129 @@
     [ngStyle]="{'width.px': globalService.getExportWidth(), 'height.px' : globalService.getExportHeight()}">
     <div id="to-png" class="chosen-template h-100 w-100">
         <div class="row h-100" *ngIf="globalService.getTemplateNumber() == 1">
-            <div class="col-md-12 workspace"
+            <div class="col-md-12 workspace" (click)="setImage($event)"
                 [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
-                <img [src]="globalService.getSelectedImage()" alt="">
             </div>
         </div>
         <div class="row h-100" *ngIf="globalService.getTemplateNumber() == 2">
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
         </div>
         <div class="row h-100" *ngIf="globalService.getTemplateNumber() == 3">
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
         </div>
         <div class="row h-100" *ngIf="globalService.getTemplateNumber() == 4">
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
         </div>
         <div class="row h-100" *ngIf="globalService.getTemplateNumber() == 5">
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
         </div>
         <div class="row h-100" *ngIf="globalService.getTemplateNumber() == 6">
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
         </div>
         <div class="row h-100" *ngIf="globalService.getTemplateNumber() == 7">
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
         </div>
 
         <div class="row h-100" *ngIf="globalService.getTemplateNumber() == 8">
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
-            <div class="col-md-6 workspace"
-                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }"><img src="#" alt=""></div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
+            <div class="col-md-6 workspace" (click)="setImage($event)"
+                [ngStyle]="{ 'border-style': globalService.getStyle() ? 'solid' : 'dashed' }">
+            </div>
         </div>
     </div>
 </div>
