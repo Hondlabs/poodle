@@ -1,3 +1,6 @@
+<a (click)="exportImage()" class="btn btn-primary">Export</a>
+<a href="/" class="btn btn-primary">Reset</a>
+
 <div class="container mx-auto my-auto"
     [ngStyle]="{'width.px': globalService.getExportWidth(), 'height.px' : globalService.getExportHeight()}">
     <div id="to-png" class="chosen-template h-100 w-100">
@@ -128,4 +131,3 @@
         </div>
     </div>
 </div>
-<a (click)="exportImage()" class="btn btn-primary">Export</a>
